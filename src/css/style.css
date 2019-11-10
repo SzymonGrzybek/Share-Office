@@ -192,7 +192,8 @@ h3{
     margin: 0;
 }
 
-.p{
+
+p{
     font: normal normal normal 15px/1.4em avenir-lt-w01_35-light1475496,sans-serif;
     color: rgb(90, 90, 90);
     text-align: justify; /* For Edge */
