@@ -1,16 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,500&display=swap');
+
 * {
     box-sizing: border-box;
-}
-
-body, html{
     margin: 0;
     padding: 0;
 }
 
+
+
 .nav--container {
     width: 100%;
     height: 60px;
-    background-color: rgb(34, 34, 34);
+    background-color: #24252a;
     -webkit-box-shadow: 0px 4px 15px -1px rgba(0,0,0,1);
     -moz-box-shadow: 0px 4px 15px -1px rgba(0,0,0,1);
     box-shadow: 0px 4px 15px -1px rgba(0,0,0,1);
@@ -31,11 +32,7 @@ body, html{
     flex-direction: row;
     align-items: center;
 }
-.nav--logo{
-    height: 80px;
-    width: 80px;
-    filter: invert(100%);
-}
+
 
 .nav--slogan{
     font-size: 1.6rem;
@@ -59,7 +56,7 @@ body, html{
 }
 
 .nav--menu > a:active, .nav--menu > a:hover {
-    color: rgb(0, 175, 175);
+    color: rgb(62, 204, 181);
 }
 
 .nav--menu--user{
@@ -76,7 +73,7 @@ body, html{
 
 .nav--menu > .nav--menu--user > a
 {
-    color: rgb(0, 175, 175);
+    color: rgb(62, 204, 181);
     margin: 5px 10px;
 }
 
@@ -132,13 +129,39 @@ h1 {
 }
 
 .conntainer_home--text > h6 {
-    margin: 20px 0 75px 0;
-    
+    margin: 20px 0 20px 0;
     letter-spacing: 0.45em;
     font-size: 1.45em;
     text-shadow: 0px 0px 20px #000000;
 }
 
+.button {
+    height: 50px;
+    width: 35%;
+
+    background-color: rgb(62, 204, 180);
+    border: solid bl 0px;
+    cursor: pointer !important;
+
+    font-size: 20px;
+    font-family: Arial,Helvetica,sans-serif;
+    color: white;
+
+    transition: bl 300ms;
+
+    text-align: center;
+    align-items: center;
+    padding-top: 15px;
+
+    text-decoration: none;
+    border-radius: 15px;
+
+    margin-bottom: 80px;
+}
+
+.button:hover{
+    background-color: rgb(41, 136, 121);
+}
 .conntainer_about{
     display: flex;
     justify-content: center;
@@ -146,6 +169,8 @@ h1 {
     
     width: 100%;
     height: 100%;
+
+    
 }
 
 .container_about--parallax {
@@ -159,6 +184,7 @@ h1 {
 
 .container_about--parallax--about_us{
     width: 30%;
+    min-width: 447px;
     height: auto;
     background-color: white;
 
@@ -217,7 +243,7 @@ p{
 }
 
 .community--text > span {
-    max-width: 30%;
+    max-width: 50%;
 }
 
 .community--carousel{
@@ -226,14 +252,94 @@ p{
     align-items: center;
     flex-direction: column;
 }
-
-.center-block{
+/*  */
+footer{
+    height: auto;
+    background-color: #24252a;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.slogan{
-    font-family: 'Playfair Display', serif;
-    color: white;
+.footer{
+    height: 7vh;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+}
+
+.copyright{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+}
+
+.copyright p{
+    color: rgb(167, 167, 167);
+}
+.copyright p a{
+    color: rgb(167, 167, 167);
+    text-decoration: none;
+}
+
+.footer--icons{
+    position: static;
+    display: flex;
+    justify-content: flex-end;
+    /* top: 50%; */
+    transform: translateY(-50%);
+    width: 50%;
+    text-align: center;
+    margin-top: 28px;
+    
+}
+.btn{
+    display: inline-block;
+    min-width: 45px;
+    height: 45px;
+    background: #e2e2e2;
+    margin: 3px;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px -5px #00000070;
+    color: #24252a;
+    overflow: hidden;
+    position: relative;
+}
+.btn i{
+    line-height: 45px;
+    font-size: 20px;
+    transition: 0.2s linear;
+}
+.btn:hover i{
+    transform: scale(1.2);
+    color: #f1f1f1;
+}
+.btn::before{
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: #0088a9;
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+}
+.btn:hover::before{
+    animation: icons-animation 0.7s 1;
+    top: -10%;
+    left: -10%;
+}
+
+@keyframes icons-animation {
+    0%{
+      left: -110%;
+      top: 90%;
+    }50%{
+      left: 10%;
+      top: -30%;
+    }100%{
+      top: -10%;
+      left: -10%;
+    }
 }

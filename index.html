@@ -3,43 +3,52 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>SHARE OFFICE</title>
+    <title>Share Office</title>
 
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap" rel="stylesheet">
     
     <!-- Main CSS Stylesheets -->
     <link rel="stylesheet" type="text/css" href="src\css\style.css">
+    <!-- Nav CSS Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="src\css\nav.css">
+    <!-- Font Awsome -->
+    <link rel="stylesheet" href="src\css\fontawesome-all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
     <!-- Paralax Accesories -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="src\js\parallax.min.js"></script>
+    <script src="src\js\parallax.min.js"></script>  
 </head>
 <body>
-    <div class="nav--container center-block">
-        <div class="nav-bar">
-            <div class="nav--office">
-                <img class="nav--logo" src="img\Hand1.png" alt="Logo">
-                <h3 class="nav--slogan slogan">SHARE OFFICE</h3>
-            </div>
-            <div class="nav--menu">
-                <a class="#Home">Home</a>
-                <a class="#About">About</a>
-                <a class="#Community">Community</a>
-                <a class="#Spaces">Spaces</a>
-                <a class="#Memberships">Memberships</a>
-                <a class="#Contact">Contact</a>
-                <div class="nav--menu--user">
-                    <img src="img\user_icon.png" alt="User Icon">
-                    <a class="#Log_In">Log In</a>
-                </div>
-            </div>
+    <header>
+        <div class="header--box_logo">
+            <h3 class="name">Share Office</h3>
+            <!-- <img class="nav--logo" src="img\Logo.png" alt="Logo"> -->
         </div>
-    </div>
+        <nav>
+            <ul class="nav--links">
+                <li><a class="#Home">Home</a></li>
+                <li><a class="#About">About</a></li>
+                <li><a class="#Community">Community</a></li>
+                <li><a class="#Spaces">Spaces</a></li>
+                <li><a class="#Memberships">Memberships</a></li>
+                <li><a class="#Contact">Contact</a></li>
+            </ul>
+            <div class="nav--button">
+                <!-- <a class=""><button class=""><i class="fas fa-user sth"></i><p class="sth">Log In</p></button></a> -->
+                <a class="btn1" href="" target="_blank">
+                    <i class="fas fa-user sth"></i><p class="sth">Log In</p>
+                </a>
+            </div>
+        </nav>
+    </header>
+
     <div class="conntainer_home">
-        <img src="img\IMG_1.jpeg" alt="Main Photo">
+        <img src="img\IMG_3.jpg" alt="Main Photo">
         <div class="conntainer_home--text">
             <h1>CO-WORKING</h1>
             <h6>IN AN INNOVATIVE ENVIRONMENT</h6>
+            <a class="button" href="">BOOK A SPACE</a>
         </div>
     </div>
     <div class="container_about">
@@ -76,5 +85,30 @@
                 </p>
             </span>
         </div>
+    </div> 
+    
+    
+    <footer>
+        <div class="footer">
+            <div class="copyright">
+                    <p>&copy; 2019 by Share Office. Proudly created with <a href="https://github.com/SzymonGrzybek" target="_blank">Grzybek</a><p>
+            </div>  
+            <div class="footer--icons">
+                <a class="btn" href="https://www.facebook.com" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="btn" href="https://twitter.com" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a class="btn" href="https://www.instagram.com" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class="btn" href="https://github.com/SzymonGrzybek" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
+
